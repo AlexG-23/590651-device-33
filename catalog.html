@@ -1,116 +1,121 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
-  <header class="page-header">
+<body class="page-body">
+  <div class="container">
+    <header class="page-header">
 
-    <a class="header-logo" href="index.html">
-      <img src="images/device-logo-header.svg" alt="Логотип Device." width="145" height="36">
-    </a>
+      <a class="header-logo" href="index.html">
+        <img src="images/device-logo-header.svg" alt="Логотип Device." width="145" height="36">
+      </a>
 
-    <div class="user-nav-wrapper">
-      <form class="search" action="https://echo.htmlacademy.ru" method="get">
-        <label class="search-field">
-          <span class="visually-hidden">Поиск</span>
-          <input class="search-input" type="text" name="search-field" placeholder="Текст поиска">
-        </label>
-        <button class="search-button" type="submit">Найти</button>
-      </form>
+      <div class="user-nav-wrapper">
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <label class="search-field">
+            <span class="visually-hidden">Поиск</span>
+            <input class="search-input" type="text" name="search-field" placeholder="Текст поиска">
+          </label>
+          <button class="search-button" type="submit">Найти</button>
+        </form>
 
-      <div class="user-nav">
-        <ul class="user-nav-list">
-          <li class="user-nav-item user-nav-item-username">
-            <a class="user-nav-link" href="#">Коля Петухов</a>
+        <div class="user-nav">
+          <ul class="user-nav-list">
+            <li class="user-nav-item user-nav-item-username">
+              <a class="user-nav-link" href="#">Коля Петухов</a>
+            </li>
+
+            <li class="user-nav-item user-nav-item-logout">
+              <a class="user-nav-link" href="#">Выйти</a>
+            </li>
+
+            <li class="user-nav-item user-nav-item-compare">
+              <a class="user-nav-link" href="#">Сравнить</a>
+            </li>
+
+            <li class="user-nav-item user-nav-item-cart">
+              <a class="user-nav-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-item main-nav-item-catalog">
+            <a class="main-nav-link" href="catalog.html">Каталог товаров</a>
+            <div class="catalog-nav">
+              <ul class="catalog-nav-list visually-hidden">
+                <li class="catalog-nav-item">
+                  <a class="catalog-nav-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="catalog-nav-item">
+                  <a class="catalog-nav-link" href="#">Моноподы для cелфи</a>
+                </li>
+                <li class="catalog-nav-item">
+                  <a class="catalog-nav-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="catalog-nav-item">
+                  <a class="catalog-nav-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-nav-item">
+                  <a class="catalog-nav-link" href="#">Умные часы</a>
+                </li>
+                <li class="catalog-nav-item">
+                  <a class="catalog-nav-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </li>
 
-          <li class="user-nav-item user-nav-item-logout">
-            <a class="user-nav-link" href="#">Выйти</a>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#">Доставка</a>
           </li>
 
-          <li class="user-nav-item user-nav-item-compare">
-            <a class="user-nav-link" href="#">Сравнить</a>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#">Гарантия</a>
           </li>
 
-          <li class="user-nav-item user-nav-item-cart">
-            <a class="user-nav-link" href="#">Корзина</a>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+  </div>
+
+
+  <main class="page-main">
+
+    <header class="inner-header">
+      <div class="container">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </div>
-    </div>
-
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li class="main-nav-item main-nav-item-catalog">
-          <a class="main-nav-link" href="catalog.html">Каталог товаров</a>
-          <div class="catalog-nav">
-            <ul class="catalog-nav-list visually-hidden">
-              <li class="catalog-nav-item">
-                <a class="catalog-nav-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="catalog-nav-item">
-                <a class="catalog-nav-link" href="#">Моноподы для cелфи</a>
-              </li>
-              <li class="catalog-nav-item">
-                <a class="catalog-nav-link" href="#">Экшн-камеры</a>
-              </li>
-              <li class="catalog-nav-item">
-                <a class="catalog-nav-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="catalog-nav-item">
-                <a class="catalog-nav-link" href="#">Умные часы</a>
-              </li>
-              <li class="catalog-nav-item">
-                <a class="catalog-nav-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="main-nav-item">
-          <a class="main-nav-link" href="#">Доставка</a>
-        </li>
-
-        <li class="main-nav-item">
-          <a class="main-nav-link" href="#">Гарантия</a>
-        </li>
-
-        <li class="main-nav-item">
-          <a class="main-nav-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main-catalog">
-
-    <header class="inner-header">
-      <h1 class="inner-header-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
-        </li>
-      </ul>
     </header>
 
-    <div class="catalog-container">
-      <div class="catalog-products">
+    <div class="catalog">
+      <div class="container catalog-container">
         <section class="filters">
           <h2 class="catalog-title">Фильтр:</h2>
 
           <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
 
-            <fieldset class="filters-group">
+            <fieldset class="-containerfilters-group">
               <legend class="filters-title">Стоимость</legend>
               <input class="filters-slider" name="price" type="range" min="0" max="8000" value="5000" step="1">
               <span class="price-limit">От 0</span>
