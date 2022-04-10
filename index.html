@@ -272,7 +272,7 @@
 
 
     <div class="container">
-      <a class="delivery" href="#">
+      <a class="delivery" href="#" onclick="modalOpen()">
         <span class="delivery-button-text">доставим редкий товар под заказ</span>
         <span class="info-button">
           <span class="visually-hidden">Информация о доставке.</span>
@@ -391,7 +391,7 @@
   <!-- add class modal-open for delivery form opening -->
   <div class="modal-container">
     <div class="modal modal-delivery">
-      <button class="modal-close-button" type="button">
+      <button class="modal-close-button" type="button" onclick="modalClose()">
         <span class="visually-hidden">Закрыть.</span>
       </button>
       <section class="modal-content">
@@ -436,6 +436,15 @@
       </section>
     </div>
   </div>
+  <script>
+    var deliveryModal = document.querySelector(".modal-container");
+    function modalOpen() {
+      deliveryModal.classList.add("modal-open");
+    }
+    function modalClose() {
+      deliveryModal.classList.remove("modal-open");
+    }
+  </script>
 
 </body>
 </html>
